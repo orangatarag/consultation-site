@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Public Consultation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Have Your Say</h1>
+
+  <form name="consultation" netlify netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="consultation" />
+    <p hidden><input name="bot-field" /></p>
+
+    <label>
+      Name:
+      <input type="text" name="name" required />
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" required />
+    </label>
+
+    <label>
+      Which option do you prefer?
+      <input type="radio" name="option" value="Option A" /> Option A
+      <input type="radio" name="option" value="Option B" /> Option B
+    </label>
+
+    <label>
+      Comments:
+      <textarea name="comments"></textarea>
+    </label>
+
+    <!-- Add reCAPTCHA -->
+    <div data-netlify-recaptcha="true"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -9,7 +9,9 @@
 <body>
   <h1>Have Your Say</h1>
 
-  <form name="consultation" netlify netlify-honeypot="bot-field" method="POST" data-netlify-recaptcha="true">
+  <form name="consultation" netlify netlify-honeypot="bot-field" <!--
+    CUSTOMISE SUCCESS PAGE LOCATION like this  action="/pages/success"--> 
+    method="POST" data-netlify-recaptcha="true">
     <input type="hidden" name="form-name" value="consultation" />
     <p hidden><input name="bot-field" /></p>
 
